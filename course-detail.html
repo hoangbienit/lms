@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.vng.edu.vn - No Copyright -->
+  <title>VNG EDUCATION Learning System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--link rel="stylesheet" href="css/bootstrap-theme.min.css"-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--script src="js/sameHeight.js"></script-->
+  
+  <!--link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script-->
+</head>
+
+<body>
+	<header>
+		<nav class="header-wrap">
+			<div class="container">
+				<div class="logo col-md-2">
+					<a href="index.html">
+						<img src="images/logo.png" alt="vng.edu.vn" class="img-fluid">
+					</a>
+				</div>
+				
+				<div class="header-menu col-md-2">
+					<div class="nav-wrap">
+						<a class="nav-link" href="#"><i class="fa fa-bars" aria-hidden="true"></i>
+							<span>Tìm theo danh mục</span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="course.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Khoá học</a>									
+							</li>
+							
+							<li>
+								<a href="account.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Account</a>                    
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Kinh doanh</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Marketing - Truyền thông</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Kỹ năng cho công việc</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Ngoại ngữ</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Thiết kế, đồ họa và video</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> IT và lập trình</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Nuôi dạy con</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Phụ nữ và gia đình</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Phát triển cá nhân</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Nghệ thuật và Đời sống</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Luyện thi</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Vi tính văn phòng</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Kế toán - tài chính - đầu tư</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header-search col-md-4">
+					<form id="search-form" action="/danh-sach-khoa-hoc" method="get">
+						<div class="input-group">
+							<input name="q" type="text" class="form-control" placeholder="Tìm khóa học bạn quan tâm" autocomplete="off">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary search-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+								<span class="mob">Tìm</span></button>
+							</span>
+						</div>
+					</form>
+				</div>
+				
+				<div class="header-shop col-md-2">
+					<ul class="shop-info">
+						<li class="hotline">
+							<span class="text">Hotline</span>
+							<span class="number">1900 1000</span>
+						</li>
+						<li class="cart">
+							<!--a href="/gio-hang" class="dropdown-toggle cart_anchor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"-->
+								<i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+								<span class="count-number">0</span>
+							<!--/a-->
+					
+							<ul class="dropdown-menu wrap clearfix">
+								<li class="clearfix wrap-form-cart add-to-cart-register" id="header-form-cart">
+									<p class="empty-cart">Giỏ hàng trống!</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-md-2">
+					<ul class="nav navbar-nav header-account">
+						<li class="account-login">
+							<a href="#" class="account-menu">
+								<span class="sub-wrap">Hoàng Biên</span><br>
+								<span class="sub-wrap">Khóa học của tôi <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							</a>
+
+							<ul class="dropdown-menu dropdown-login">
+								<li><a href="#">Khóa học của tôi</a></li>
+								<li><a href="#">Lịch sử giao dịch</a></li>
+								<li><a href="#">Kích hoạt mã thẻ</a></li>
+								<li><a href="#">Mua thẻ</a></li>								
+								<li><a href="#">Chỉnh sửa thông tin</a></li>
+								<li><a href="#">Thoát</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				
+			</div><!--end .container-->
+		</nav>
+	</header> <!-- end header -->
+	
+	<!-- main content -->
+	<div id="main-content">
+		<div class="course-detail container">
+			<div class="course-header">
+				<h3 class="course-name"><a href="#">Lập trình JAVA</a></h3>
+				<p>Tất tần tật lập trình JAVA từ cơ bản đến chuyên sâu sẽ được trình bày chi tiết trong khóa học này.
+				Và rất nhiều kiến thức được chia sẻ từ kinh nghiệm thực tế các dự án.</p>
+				<div class="teacher-info">
+					<div class="teacher-name">
+						Giảng Viên: Nguyễn Văn Chiến Thắng
+					</div>
+					
+					<div class="teacher-intro">
+						Chuyên gia lập trình cao cấp ...
+					</div>
+				</div>
+			</div>
+			
+			<div class="course-intruction">
+				<div class="video-intruction col-sm-6 col-md-8">
+					<!--video controls>
+						<source src="blob:https://www.youtube.com/6bbe44b3-8729-4566-b257-8f1993996483" type="video/mp4">
+					</video-->
+					<iframe height="420" src="https://www.youtube.com/embed/Zo8B6AP-TKU" frameborder="0" allowfullscreen></iframe>
+				</div>
+				
+				<div class="intruction col-sm-6 col-md-4">
+					<ul>
+						<li class="sale">
+							<p class="price">500,000 đ</p>
+							<p class="sale-price">399,000 đ</p>
+						</li>
+						<li class="register"><a href="#">Đăng ký học</a></li>
+						<li><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i><span>Thời lượng: 60 giờ</span></li>
+						<li><i class="fa fa-user fa-2x" aria-hidden="true"></i><span>Trình độ: cơ bản đến nâng cao</span></li>
+						<li><i class="fa fa-video-camera fa-2x" aria-hidden="true"></i><span>Số bài: 50</span></li>
+						<li><i class="fa fa-certificate fa-2x" aria-hidden="true"></i><span>Cấp chứng chỉ hoàn thành</span></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="course-deail">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="course-footer-menu">
+				  <ul class="nav navbar-nav ">
+					<li><a href="contents/course-overview.html" class="active">Giới thiệu</a></li>
+					<li><a href="contents/course-overview.html">Lợi ích</a></li>
+					<li><a href="contents/course-content.html">Nội dung</a></li>					
+					<li><a href="contents/course-overview.html">Đối tượng</a></li>					
+					<li><a href="contents/course-overview.html">Giảng viên</a></li>
+				  </ul>
+				  
+				</div><!-- /.navbar-collapse -->
+				
+				<div class="course-footer-content">
+					<h2 style="text-align: justify;">TIẾNG ANH MẤT GỐC ONLINE</h2><p style="text-align: justify;">Do một nhà ngôn ngữ học và là ngoại giao nhiều năm sống ở nước ngoài tác giả am hiểu cả văn viết lẫn văn nói, cũng nhưthơ ca hò vè của người bản xứ, còn hơn thế nữa tác giả hiểu rất rõ người Việt Nam.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="container">
+			<div class="footer-1 col-md-3 col-sm-6">
+				<h3>GIỚI THIỆU</h3>
+				<ul>
+					<li><a href="#">Về chúng tôi</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer-2 col-md-3 col-sm-6">
+				<h3>HƯỚNG DẪN</h3>
+				<ul>
+					<li><a href="#">Đăng ký học</a></li>
+					<li><a href="#">Thanh toán</a></li>
+					<li><a href="#">Sử dụng khóa học</a></li>
+					<li><a href="#">Câu hỏi thường gặp</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer-3 col-md-3 col-sm-6">
+				<h3>YÊU CẦU HỖ TRỢ</h3>
+				<ul>
+					<li>Hotline: 090 883 0099</li>
+					<li>Email: bhoang@vng.edu.vn</li>
+					<li>Skype: hoangbienit</li>
+				</ul>
+			</div>
+			
+			<div class="footer-4 col-md-3 col-sm-6">
+				<h3>GIẢNG DẠY<h3>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="footer-left col-md-9">
+				<p>Công ty TNHH Công Nghệ và Giải Pháp Giáo Dục Thế Hệ Mới Việt Nam</p>
+				<p>Địa chỉ: 2504 CT2, Nam Xa La, Phúc La, Hà Đông, Hà Nội</p>
+				<p>Điện thoại: 090 883 0099</p>
+				<p>Email: bhoang@vng.edu.vn</p>
+				<p>Web: vng.edu.vn</p>
+			</div>
+			
+			<div class="footer-right col-md-3">
+				<section id="block-fb-likebox-0" class="block block-fb-likebox clearfix">
+					<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://staticxx.facebook.com/connect/xd_arbiter/r/_IDqWBiKXtV.js?version=42#channel=f38d6b575bffc3&amp;origin=http%3A%2F%2Fvng.edu.vn" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/_IDqWBiKXtV.js?version=42#channel=f38d6b575bffc3&amp;origin=http%3A%2F%2Fvng.edu.vn" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/Search.Engine.Optimize.SEO" data-width="320" data-height="350" data-hide-cover="0" data-show-facepile="1" data-show-posts="0" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=579264578881928&amp;container_width=263&amp;height=350&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FSearch.Engine.Optimize.SEO&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=320"><span style="vertical-align: bottom; width: 263px; height: 214px;"><iframe name="f2f2dee7db74c48" width="320px" height="350px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.3/plugins/page.php?app_id=579264578881928&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F_IDqWBiKXtV.js%3Fversion%3D42%23cb%3Df672aeda956f88%26domain%3Dvng.edu.vn%26origin%3Dhttp%253A%252F%252Fvng.edu.vn%252Ff38d6b575bffc3%26relation%3Dparent.parent&amp;container_width=263&amp;height=350&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FSearch.Engine.Optimize.SEO&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;width=320" style="border: none; visibility: visible; width: 263px; height: 214px;" class=""></iframe></span></div>
+				</section>
+			</div>
+		</div>
+	</footer> <!-- end footer -->
+
+</body>

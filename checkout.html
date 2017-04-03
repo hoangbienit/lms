@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.vng.edu.vn - No Copyright -->
+  <title>VNG EDUCATION Learning System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--link rel="stylesheet" href="css/bootstrap-theme.min.css"-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkout.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container wrapper">
+        <div class="row cart-head order-process"> 
+            <div class="col-xs-3 order-process-step complete"><!-- complete -->
+              <div class="text-center order-process-stepnum">Giỏ hàng</div>
+              <div class="progress"><div class="progress-bar"></div></div>
+              <a href="shopping-cart.html" class="order-process-dot"></a>
+            </div>
+            
+            <div class="col-xs-3 order-process-step active"><!-- complete -->
+              <div class="text-center order-process-stepnum">Thanh toán</div>
+              <div class="progress"><div class="progress-bar"></div></div>
+              <a href="#" class="order-process-dot"></a>
+            </div>
+            
+            <div class="col-xs-3 order-process-step disabled"><!-- active -->
+              <div class="text-center order-process-stepnum">Hoàn tất</div>
+              <div class="progress"><div class="progress-bar"></div></div>
+              <a href="#" class="order-process-dot"></a>
+            </div>
+        </div>    
+        <div class="row cart-body">
+            <form class="form-horizontal" method="post" action="">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
+                <!--REVIEW ORDER-->
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Xem lại đơn hàng <div class="pull-right"><small><a class="afix-1" href="#">Sửa giỏ hàng</a></small></div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-sm-3 col-xs-3">
+                                <img class="img-responsive" src="images/logo-web.png" />
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <div class="col-xs-12">Tiếng anh trẻ em</div>
+                                <div class="col-xs-12"><small>Số lượng:<span>1</span></small></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-3 text-right">
+                                <h6><span>vnđ </span>250,000</h6>
+                            </div>
+                        </div>
+                        <div class="form-group"><hr /></div>
+                        <div class="form-group">
+                            <div class="col-sm-3 col-xs-3">
+                                <img class="img-responsive" src="images/logo-web.png" />
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <div class="col-xs-12">Tiếng anh mất gốc</div>
+                                <div class="col-xs-12"><small>Số lượng:<span>1</span></small></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-3 text-right">
+                                <h6><span>vnđ </span>500,000</h6>
+                            </div>
+                        </div>
+                        <div class="form-group"><hr /></div>
+                        <div class="form-group">
+                            <div class="col-sm-3 col-xs-3">
+                                <img class="img-responsive" src="images/logo-web.png" />
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <div class="col-xs-12">Lập trình Android</div>
+                                <div class="col-xs-12"><small>Số lượng:<span>2</span></small></div>
+                            </div>
+                            <div class="col-sm-3 col-xs-3 text-right">
+                                <h6><span>vnđ </span>500,000</h6>
+                            </div>
+                        </div>
+                        <div class="form-group"><hr /></div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <strong>Tổng đơn hàng</strong>
+                                <div class="pull-right"><span>vnđ </span><span>1,250,000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--REVIEW ORDER END-->
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-pull-6 col-sm-pull-6">
+                <!--SHIPPING METHOD-->
+                <div class="panel panel-info">
+                    <div class="panel-heading">Thông tin thanh toán</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <h4>Địa chỉ giao hàng</h4>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <strong>Họ và tên:</strong>
+                                <input type="text" name="full_name" class="form-control" value="" required="text-right" />
+                            </div>
+                            <div class="span1"></div>
+                            <div class="col-md-12">
+                                <strong>Công ty:</strong>
+                                <input type="text" name="company" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Địa chỉ:</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="address" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Tỉnh/Thành phố:</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="city" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Số điện thoại:</strong></div>
+                            <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Địa chỉ e-mail:</strong></div>
+                            <div class="col-md-12"><input type="text" name="email_address" class="form-control" value="" /></div>
+                        </div>
+                    </div>
+                </div>
+                <!--SHIPPING METHOD END-->
+                <!--CREDIT CART PAYMENT-->
+                <div class="panel panel-info">
+                    <div class="panel-heading"><span><i class="glyphicon glyphicon-lock"></i></span> Hình thức thanh toán</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Loại thanh toán:</strong></div>
+                            <div class="col-md-12">
+                                <select id="CreditCardType" name="CreditCardType" class="form-control">
+                                    <option value="5">Chuyển khoản ngân hàng internet banking</option>
+                                    <option value="5">Chuyển khoản tài khoản ngân hàng</option>
+                                    <option value="6">Thẻ cào điện thoại</option>
+                                    <option value="7">Thẻ cào VNG Education</option>
+                                    <option value="8">Khi nhận hàng</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Mã thẻ:</strong></div>
+                            <div class="col-md-12"><input type="text" class="form-control" name="car_number" value="" /></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <button type="submit" class="btn btn-primary btn-submit-fix">Tiếp tục</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--CREDIT CART PAYMENT END-->
+            </div>
+            
+            </form>
+        </div>
+        <div class="row cart-footer">
+
+        </div>
+    </div>
+</body>
